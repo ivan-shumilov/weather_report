@@ -1,0 +1,15 @@
+env
+.idea
+__pycache__
+media/
+
+*.pyc
+*.orig
+
+db.sqlite3
+local_settings.py
+
+*.pid*
+*.log*
+selenium-report.html
+output.xml
