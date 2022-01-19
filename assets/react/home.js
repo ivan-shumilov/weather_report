@@ -29,7 +29,7 @@ class Home extends React.Component {
         <main role='main' className='container pt-5'>
           <div className='row'>
             <div className='col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-5'>
-               Сейчас в погода {this.state.weather} градусов.
+               Сейчас в городе {this.state.weather.city_name} погода {this.state.weather.degree} градусов.
             </div>
           </div>
         </main>

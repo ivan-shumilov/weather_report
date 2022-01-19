@@ -50,7 +50,7 @@ class ForecastNowAPIView(views.APIView):
             # получаем сколько градусов в городе и записываем в базу
             degree = response.json()['hours'][0]['airTemperature']['noaa']
             WeatherCity.objects.create(city_name=city_name, degree=degree)
-            return Response(degree, status=status.HTTP_201_CREATED)
+            return Response({'degree': degree, 'city_name': city_name}, status=status.HTTP_201_CREATED)
         except KeyError:
             return Response(status=status.HTTP_400_BAD_REQUEST)
 
