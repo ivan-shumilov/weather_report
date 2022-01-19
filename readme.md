@@ -8,7 +8,7 @@
 
 Сервис погоды: https://api.stormglass.io/v2/weather/point
 
-Нужно зарегистрироваться на этом ресурсе и получить ключ и также надо получить ключ googlemaps.
+Нужно зарегистрироваться на этом ресурсе и получить ключ и также надо сделать на https://ipstack.com/.
 
 После активации окружения нужно добавить в консоль переменные:
 
@@ -16,9 +16,11 @@ export API_STORMGLASS_URL=https://api.stormglass.io/v2/weather/point
 
 export API_STORMGLASS_KEY='your key'
 
-export API_GOOGLEMAPS_KEY='your key'
+export API_IPSTACK_URL=https://api.ipstack.com
 
-## Комманда, которые запускаются при первой активации виртуального окружения
+export API_IPSTACK_KEY='your key'
+
+## Комманда, которую надо выполнить при первой активации виртуального окружения
 
 pip install -r requirements.txt
 

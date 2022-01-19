@@ -4,7 +4,6 @@ Pillow==7.2.0
 flake8
 arrow
 requests
-googlemaps
 PyYAML==5.3.1
 django-cors-headers
 python-memcached==1.59
