@@ -18,4 +18,10 @@ export API_STORMGLASS_KEY='your key'
 
 export API_GOOGLEMAPS_KEY='your key'
 
+## Комманда, которые запускаются при первой активации виртуального окружения
 
+pip install -r requirements.txt
+
+## Запуск проекта
+
+python manage.py runserver
